@@ -1,0 +1,342 @@
+/* Reset and basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+    background-size: cover;
+    height: 100vh; /* Full screen height */
+    color: #f7f7f7; /* Light text color for contrast */
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+
+/* Apply this to the container holding your content */
+#main-content {
+    height: 100vh; /* Make the content container take up the entire viewport height */
+    overflow-y: auto; /* Enable vertical scrolling for the content */
+    padding-right: 10px; /* Add a little padding if needed */
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #ddd;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+}
+
+.timeline-item {
+    padding: 20px 30px;
+    position: relative;
+    border: 1px solid #383838;
+    border-radius: 5px;
+    width: 45%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item.left {
+    left: 0;
+}
+
+.timeline-item.right {
+    left: 55%;
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    width: 20px;
+    height: 20px;
+    border: 4px solid #383838;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-item.left::after {
+    right: -12px;
+}
+
+.timeline-item.right::after {
+    left: -12px;
+}
+
+.timeline-content {
+    padding: 10px 0;
+}
+
+.timeline-content h3 {
+    margin: 0;
+    color: #ffffff;
+}
+
+.timeline-content p {
+    margin: 5px 0;
+}
+
+.timeline-content span {
+    font-size: 0.9em;
+    color: #e0e0e0;
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.project-card {
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    max-width: 800px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.02);
+}
+
+.project-image {
+    flex: 1;
+    min-width: 200px;
+    background-color: #1f2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.project-content {
+    flex: 2;
+    padding: 20px;
+}
+
+.project-content h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #0586f7;
+}
+
+.project-content p {
+    margin: 10px 0;
+    font-size: 1em;
+    color: #e8ecf6;
+}
+
+.project-content .meta {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.meta span {
+    font-size: 0.9em;
+    margin-right: 15px;
+    color: #8892b0;
+}
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.tag {
+    padding: 5px 10px;
+    font-size: 0.8em;
+    color: #0a192f;
+    background-color: #0586f7;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Side Navbar */
+#side-nav {
+    position: fixed; /* Keeps it fixed in place */
+    top: 20%; /* Align to the center vertically */
+    left: 50px; /* Add space from the left side of the screen */
+    transition: transform 0.3s ease-in-out; /* Add transition to animate sidebar */
+    width: 200px; /* Fixed width for the navbar */
+    height: auto; /* Adjust height based on content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#side-nav ul {
+    list-style: none;
+    padding: 0;
+    width: 100%; /* Make the list span the full width */
+    text-align: center;
+}
+
+#side-nav ul li {
+    margin: 10px 0;
+}
+
+#side-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    transition: font-size 0.6s ease, background-color 0.3s ease;
+}
+
+#side-nav ul li a.scrolling {
+    font-size: 34px; /* Increase font size when scrolling */
+}
+
+#side-nav ul li a:hover {
+    background-color: #537895;
+}
+
+/* Main Content */
+#main-content {
+    margin-left: 300px; /* Leave extra space for the adjusted navbar */
+    width: calc(100% - 220px); /* Adjust width to fill remaining space */
+    padding: 20px;
+}
+
+section {
+    padding: 50px 20px;
+
+    margin-bottom: 50px;
+}
+
+/* Hero Section */
+#about {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #f7f7f7;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #f7f7f7;
+}
+
+#about p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+#about ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+#about ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+#about ul li:before {
+    content: "•";
+    color: #1d8eb8;
+    padding-right: 10px;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+/* Contact Section */
+footer {
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #side-nav {
+        position: relative; /* Change to relative for better mobile responsiveness */
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-around;
+        top: 0; /* Reset top for mobile */
+        transform: none; /* Reset transform for mobile */
+        padding: 10px 0;
+        left: 0; /* Remove left offset for mobile */
+    }
+
+    #main-content {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+#social-icons {
+    display: flex;
+    justify-content: center; /* Center the icons horizontally */
+    align-items: center;     /* Center the icons vertically */
+    padding: 20px 0;
+    margin-top: auto; /* Push the icons to the bottom of the sidebar */
+}
+
+.social-link {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 0 15px; /* Space between icons */
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #537895; /* Highlight color for hover */
+}
+
