@@ -3,176 +3,281 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Kavipriya M - Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Font Awesome for Icons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-
-    <!-- Side Navigation -->
-    <div id="side-nav">
-        <ul>
+    <!-- Navigation -->
+    <nav class="navbar">
+       
+        <ul class="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#certification">Certifications</a></li>
-            <li><a href="#projects">Projects</a></li>
             <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#connect">Connect</a></li>
         </ul>
-        
-        <!-- Social Icons -->
-        <div id="social-icons">
-            <a href="https://github.com/2004kavipriya" target="_blank" class="social-link">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/kavipriya-m-813b2225a/" target="_blank" class="social-link">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https:https://leetcode.com/u/kavipriyaM/" target="_blank" class="social-link">
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="about-container">
+            <div class="profile-pic">
+                <img src="C:\Users\HP\Downloads\WhatsApp Image 2024-12-29 at 6.38.53 PM.jpeg" alt="Kavipriya M">
+            </div>
+            <div class="about-content">
+                <h1>Hi, I'm Kavipriya M</h1>
+                <h2>Full-Stack Developer</h2>
+                <p>I am Kavipriya, currently pursuing my B.E. in the Department of Computer Science and Engineering with a specialization in Artificial Intelligence and Machine Learning from Chennai Institute of Technology. I consider myself to be a highly dedicated and motivated individual with a strong passion for technology and innovation. As a passionate web developer and UI/UX designer. I have honed my skills in both front-end and back-end development, and I am constantly exploring new design trends and technologies to enhance my work.In terms of programming languages, I have substantial experience coding in Python and Java. I am always eager to learn and grow, seeking opportunities that challenge me and allow me to contribute meaningfully.</p>
+        </div>
+    </section>
+    <div class="skills-section">
+        <h3>Technical Skills</h3>
+        <div class="skills-grid">
+            <!-- First Row -->
+            <div class="skill-item">
                 <i class="fas fa-code"></i>
-            </a>
-            <a href="mailto:kavipriya2750@gmail.com" target="_blank" class="social-link">
-                <i class="fas fa-envelope"></i>
-            </a>
+                <h4>Full Stack Development</h4>
+                <div class="skill-progress">
+                    <div class="progress-bar" style="width: 90%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-python"></i>
+                <h4>Python & Java</h4>
+                <div class="skill-progress">
+                    <div class="progress-bar" style="width: 85%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-paint-brush"></i>
+                <h4>UI/UX Design</h4>
+                <div class="skill-progress">
+                    <div class="progress-bar" style="width: 88%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-database"></i>
+                <h4>MySQL</h4>
+                <div class="skill-progress">
+                    <div class="progress-bar" style="width: 82%"></div>
+                </div>
+            </div>
+            <!-- Second Row -->
+            <div class="skill-item">
+                <i class="fas fa-gamepad"></i>
+                <h4>Game Development</h4>
+                <div class="skill-progress">
+                    <div class="progress-bar" style="width: 80%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-mobile-alt"></i>
+                <h4>App Development</h4>
+                <div class="skill-progress">
+                    <div class="progress-bar" style="width: 85%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-brain"></i>
+                <h4>Machine Learning</h4>
+                <div class="skill-progress">
+                    <div class="progress-bar" style="width: 83%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-github"></i>
+                <h4>Git & GitHub</h4>
+                <div class="skill-progress">
+                    <div class="progress-bar" style="width: 88%"></div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div id="main-content">
-
-        <section id="about">
-            <h2>Hi, I'm Kavipriya M</h2>
-            <p>A passionate Full-Stack developer.</p>
-            <p>
-                I am a passionate and dedicated Full Stack Developer, currently pursuing a Bachelor's in Engineering (BE) in Computer Science and Engineering (AI/ML) at the Chennai Institute of Technology. 
-                I specialize in creating seamless, user-friendly interfaces while building robust, scalable applications. With a strong focus on UI/UX design and Core Game Designing, I take pride in making technology accessible and intuitive for users.
-            </p>
-            <p>
-                My work spans across designing efficient user interfaces and developing end-to-end solutions. I have a keen interest in learning and applying the latest advancements in AI and Machine Learning, 
-                which I integrate into my projects to solve real-world problems and deliver exceptional experiences.
-            </p>
-            <p>
-                I have actively participated in several prestigious hackathons, where I demonstrated my problem-solving abilities and creativity. Some of my key achievements include:
-            </p>
-            <ul>
-                <ul>
-                    <li>Currently a Finalist in the Smart India Hackathon (SIH) 2024</li>
-                    <li>Finalist at the TVS Motor Innovation Challenge (May 2024)</li>
-                    <li>Finalist at the 30 Hacks Global Logics (April 2024)</li>
-                    <li>Second Runner-up at the Haryana State Police Hackathon (February 2024)</li>
-                </ul>
-            </ul>
-            <p>
-                I am excited to continue learning and collaborating on innovative projects. Feel free to explore my work, and let’s connect!
-            </p>
-        </section>
-        
-        <section id="certification">
-            <h2>Certifications</h2>
-            <div class="timeline">
-                <div class="timeline-item left">
-                    <div class="timeline-content">
-                        <h3>Google Cloud Generative AI:</h3>
-                        <span>2023</span>
-                        <p> This course provided a comprehensive introduction to generative AI models and their applications on Google Cloud. 
-                        It covered various tools and techniques for building and deploying generative AI solutions effectively.</p>
-                    </div>
-                </div>
-                <div class="timeline-item right">
-                    <div class="timeline-content">
-                        <h3>IBM Machine Learning Specialization:</h3>
-                        <span>2023</span>
-                        <p> This specialization covered the foundations of machine learning, 
-                            including supervised and unsupervised learning techniques, along with hands-on projects in Python. 
-                            It focused on building practical skills for deploying machine learning models using real-world datasets.</p>
-                    </div>
-                </div>
-                <div class="timeline-item left">
-                    <div class="timeline-content">
-                        <h3>Board Infinity Responsive Webpage:</h3>
-                        <span>2023</span>
-                        <p> This course focused on creating responsive web pages using HTML, CSS, and JavaScript.
-                             It taught how to design websites that adapt seamlessly to various screen sizes and devices.</p>
-                    </div>
+     <!-- Experience Section -->
+     <section id="experience" class="section">
+        <h2>Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Valeo</h3>
+                    <h4>Website Development Internship</h4>
+                    <span>Jun - Jul 2024</span>
+                    <p>Developed a comprehensive website showcasing committee workflows and information.</p>
                 </div>
             </div>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="hadap.jpeg" alt="Project Screenshot">
-                </div>
-                <div class="project-content">
-                    <h3>HADAP Offline AV Engine</h3>
-                    <p>
-                        Offline Multi-Antivirus Parallel Scanning Pipeline
-                        Created a desktop app with an offline pipeline integrating multiple antivirus engines for efficient threat detection, file segregation, and reporting.
-                        </p>
-                    <div class="tags">
-                        <span class="tag">Electron JS</span>
-                        <span class="tag">Python</span>
-                        <span class="tag">Automation</span>
-                    </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Techmedz</h3>
+                    <h4>Front-end Developer</h4>
+                    <span>Jul - Oct 2023</span>
+                    <p>Designed responsive interfaces and managed social media platforms.</p>
                 </div>
             </div>
+        </div>
+    </section>
+
     
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="projects-grid">
             <div class="project-card">
                 <div class="project-image">
-                    <img src="vehicle.jpeg" alt="Project Screenshot">
+                    <img src="C:\Users\HP\Downloads\WhatsApp Image 2024-12-29 at 1.39.36 PM.jpeg" alt="HADAP Project">
                 </div>
-                <div class="project-content">
-                    <h3>Personalized E-Vehicle Recommendation</h3>
-                    <p>
-                        Developed a machine learning model to recommend the best electric vehicle by comparing features across different models.</p>
+                <div class="project-info">
+                    <h3>HADAP Offline AV Engine</h3>
+                    <p>Offline Multi-Antivirus Parallel Scanning Pipeline with efficient threat detection.</p>
                     <div class="tags">
-                        <span class="tag">Machine learning</span>
-                        <span class="tag">Recommendation System</span>
+                        <span>Electron JS</span>
+                        <span>Python</span>
+                        <span>Automation</span>
                     </div>
                 </div>
             </div>
-
             <div class="project-card">
                 <div class="project-image">
-                    <img src="game.jpeg" alt="Project Screenshot">
+                    <img src="C:\Users\HP\Pictures\Screenshots\Screenshot 2024-12-29 151104.png" alt="E-Vehicle Project">
                 </div>
-                <div class="project-content">
+                <div class="project-info">
+                    <h3>Stock Price Prediction</h3>
+                    <p>ML model to predict stock prices based on historical data.
+                        The app, built with Streamlit, offers interactive visualizations of stock trends and
+                        predictions.
+                        .</p>
+                    <div class="tags">
+                        <span>Machine Learning</span>
+                        <span>Jupyter Lab</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="C:\Users\HP\Pictures\Screenshots\Screenshot 2024-12-04 231243.png" alt="Drugrapture Game">
+                </div>
+                <div class="project-info">
                     <h3>Drugrapture Video Game</h3>
-                    <p>Gaming experience designed to educate teenagers about the dangers of drug abuse and its consequences, powered by Unreal Engine.</p>
+                    <p>Educational gaming experience about drug abuse awareness using Unreal Engine.</p>
                     <div class="tags">
-                        <span class="tag">CORE</span>
-                        <span class="tag">Open Source</span>
-                        <span class="tag">LUA</span>
-                        <span class="tag">Educational Game</span>
+                        <span>CORE</span>
+                        <span>LUA</span>
+                        <span>Educational Game</span>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="experience">
-            <h2>Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item left">
-                    <div class="timeline-content">
-                        <h3>Valeo: Website Development Internship</h3>
-                        <span>Jun - Jul 2024</span>
-                        <p>Developed a comprehensive website acting as a central hub to showcase each committee,
-                             detail their workflows, and provide essential information.</p>
-                    </div>
-                </div>
-                <div class="timeline-item right">
-                    <div class="timeline-content">
-                        <h3>Techmedz: Front-end Developer</h3>
-                        <span>Jul - Oct 2023</span>
-                        <p> Designed responsive user interfaces and interactive features for client websites,
-                             while also managing social media platforms, 
-                            creating logos, and designing posters.</p>
-                    </div>
-                </div>
+<!-- New Achievements Section with Timeline -->
+<section id="achievements" class="section">
+    <h2>Achievements</h2>
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Smart India Hackathon (SIH) 2024</h3>
+                <span>2024</span>
+                <p>Finalist - Demonstrated innovative problem-solving skills in national-level hackathon.</p>
             </div>
-        </section>
-
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>TVS Motor Innovation Challenge</h3>
+                <span>2023</span>
+                <p>Finalist - Developed innovative solutions for automotive industry challenges.</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>30 Hacks Global Logics</h3>
+                <span>2023</span>
+                <p>Finalist - Created impactful solutions in global hackathon event.</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Haryana State Police Hackathon</h3>
+                <span>2023</span>
+                <p>Second Runner-up - Developed innovative solutions for law enforcement challenges.</p>
+            </div>
+        </div>
     </div>
+</section>
+
+<!-- Updated Certifications Section -->
+<section id="certifications" class="section">
+    <h2>Certifications</h2>
+    <div class="certifications-grid">
+        <div class="certification-card">
+            <div class="certification-icon">
+                <i class="fab fa-google"></i>
+            </div>
+            <div class="certification-info">
+                <h3>Google Cloud Generative AI</h3>
+                <span>2023</span>
+                <p>Comprehensive introduction to generative AI models and their applications on Google Cloud.</p>
+            </div>
+        </div>
+        <div class="certification-card">
+            <div class="certification-icon">
+                <i class="fab fa-ibm"></i>
+            </div>
+            <div class="certification-info">
+                <h3>IBM Machine Learning Specialization</h3>
+                <span>2023</span>
+                <p>Foundations of machine learning, including supervised and unsupervised learning techniques.</p>
+            </div>
+        </div>
+        <div class="certification-card">
+            <div class="certification-icon">
+                <i class="fas fa-code"></i>
+            </div>
+            <div class="certification-info">
+                <h3>Board Infinity Responsive Webpage</h3>
+                <span>2023</span>
+                <p>Creating responsive web pages using HTML, CSS, and JavaScript.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Connect Section -->
+    <section id="connect" class="section">
+        <h2>Connect With Me</h2>
+        <div class="social-links">
+            <a href="https://github.com/2004kavipriya" target="_blank" class="social-link">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/kavipriya-m-813b2225a/" target="_blank" class="social-link">
+                <i class="fab fa-linkedin"></i>
+                <span>LinkedIn</span>
+            </a>
+            <a href="https://leetcode.com/u/kavipriyaM/" target="_blank" class="social-link">
+                <i class="fas fa-code"></i>
+                <span>LeetCode</span>
+            </a>
+            <a href="mailto:kavipriya2750@gmail.com" class="social-link">
+                <i class="fas fa-envelope"></i>
+                <span>Email</span>
+            </a>
+        </div>
+    </section>
 
     <script src="script.js"></script>
 </body>
